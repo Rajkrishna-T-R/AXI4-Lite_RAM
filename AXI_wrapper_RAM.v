@@ -51,7 +51,7 @@ module AXI_wrapper_RAM#(parameter data_width=32,
                // Read data channel
                output reg [data_width-1:0]s_axi_rdata,
                output reg s_axi_rvalid,
-               output reg rresp,
+               output reg [1:0]s_axi_rresp,
                input  s_axi_rready
                
                
@@ -285,7 +285,7 @@ module AXI_wrapper_RAM#(parameter data_width=32,
                     if(arst_bar==0)
                         begin
                            s_axi_rvalid<=1'b0;
-                           rresp<=resp_okay;
+                           s_axi_rresp<=resp_okay;
                         end
                         
                     else 
@@ -294,7 +294,7 @@ module AXI_wrapper_RAM#(parameter data_width=32,
                            if(ram_rd_en==1)
                                 begin
                                     s_axi_rvalid<=1'b1; 
-                                    rresp<=resp_okay;
+                                    s_axi_rresp<=resp_okay;
                                 end
                            else if((s_axi_rvalid==1'b1)&&(s_axi_rready==1'b1))
                                 begin
