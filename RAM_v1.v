@@ -45,7 +45,7 @@ module RAM_v1#(parameter data_width=32,
     reg [data_width-1:0]RAM_mem[0:depth-1];
     
  
-    assign rd_data_output = rd_data_out;
+    assign data_output = rd_data_out;
     
     // FOR BRAM
     initial
