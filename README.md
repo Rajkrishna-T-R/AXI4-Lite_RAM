@@ -35,12 +35,12 @@ Test cases
 
 TIMING SUMMARY
 -------------
-Worst negative slack = 2.837ns  \n
-Total negative slack = 0.000ns  \n
-Worst hold negative slack = 0.047ns \n
-Total hold slack = 0.000ns          \n
-Worst pulse width slack = 2.750ns   \n
-Total pulse width negative slack = 0.000ns \n
+Worst negative slack = 2.837ns   <br>
+Total negative slack = 0.000ns   <br>
+Worst hold negative slack = 0.047ns  <br>
+Total hold slack = 0.000ns           <br>
+Worst pulse width slack = 2.750ns    <br>
+Total pulse width negative slack = 0.000ns  <br>
 
 
 -------------------------------------------------------------------------------
