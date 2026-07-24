@@ -50,7 +50,7 @@ Note
 1.Encountered some DRC violations but it was seen that it is related to some debug module or something that was created by vivado and not related to the AXI RAM design
 So they are ingnored.
 
-2.The design is not yet integrated with any AXI master
+2.The design is not yet integrated with any AXI master.
 
 -------------------------------------------------------------------------------
 
